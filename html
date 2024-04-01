@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head> 
+<body>
+  <h1 id="title">To Review - Survey Form</h1>
+  <p id="description">Please fill this quick survey to help us improve our service.</p>
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label">Name:<input/ id="name" type="text" required placeholder=" J. Bloggs"></label>
+   <label id="email-label">Email: <input/ id="email" type="email" required placeholder=" jbloggs@imail.com"> </label>
+   <label id="number-label">Contact Number: <input/ id="number" placeholder=" 012345 67891" type="number" max= "9" min="0"></label>
+  </fieldset>
+  <fieldset> 
+    <label> How do you feel after completing the course?
+     <select id="dropdown">
+      <option value="1">(Select one)</option>
+      <option value="2">I am now the best version of myself. Thank you. </option>
+      <option value="3"> I have done well but have room for further improvement.</option>
+      <option value="4"> I give up, give me beer and an ice-cream. </option>  
+     </select>
+    </label>
+  </fieldset>
+  <fieldset class="inline">
+    <legend>How likely are you to recommend the programme to a friend?</legend>
+    <label for="already-have">Already have!<input/ id="already-have" name="likelihood" type="radio" checked class="inline" value="1"></label>
+    <label for="maybe">Maybe, if the mood takes me, and the timing is right.<input/id="maybe" name="likelihood" type="radio" class="inline" value="2"><label>
+      <label for="probably-not">Probably not, it's not really a thing I go around doing...<input/id="probably-not" name="likelihood" type="radio" class="inline" value="3"></label>
+      <label for="no-way">No way! The spread of this garbage MUST BE STOPPED!<input/ id="no-way" name="likelihood" type="radio" class="inline" value="4"></label>
+  </fieldset>
+  <fieldset>
+    <label> Anything else to add?
+      <textarea placeholder="eg. I feel like my dad will be proud of me now..."></textarea>
+    </label>
+  </fieldset>
+  <fieldset>
+    <label>Are you happy for us to pass your details on to interested and kindly 3rd parties? E.g Satan.</label>
+    <label checkbox>Yes please do, my soul could use warming up.<input type="checkbox" class="inline" value="1"/></label>
+    <label id="checkbox">Please don't not do that.<input type="checkbox" class="inline" value="2"/></label>
+  </fieldset>
+  <input/ type="submit" value="submit" id="submit">
+  </label>
+</form>
+</body>
